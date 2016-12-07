@@ -1,25 +1,10 @@
 let nextNoteId = 0;
-export const addNote = (text) => {
-    return {
-        type: "ADD_NOTE",
-        id: nextNoteId++,
-        text
-    };
+const addNote = (text) => {
+	nextNoteId += 1;
+	return {
+		type: 'ADD_NOTE',
+		id: nextNoteId,
+		text
+	};
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default addNote;

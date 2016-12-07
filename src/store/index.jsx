@@ -1,4 +1,5 @@
 import { createStore } from 'redux';
-import { NoteApp } from '../reduces';
+import NoteApp from '../reduces';
 
-export const NoteStore=createStore(NoteApp);
+const NoteStore = createStore(NoteApp);
+export default NoteStore;

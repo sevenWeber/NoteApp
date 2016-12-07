@@ -1,18 +1,9 @@
-import React from 'react';
-import NoteList from './NoteList';
 import { connect } from 'react-redux';
+import NoteList from './NoteList';
 
-const mapStateToProps = (state) => {
-    return {
-        notes: state.notes
-    }
-};
+const mapStateToProps = state => ({ notes: state.notes });
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-
-    };
-};
+const mapDispatchToProps = () => ({});
 
 const NoteListBox = connect(
     mapStateToProps,
@@ -21,7 +12,3 @@ const NoteListBox = connect(
 
 
 export default NoteListBox;
-
-
-
-
